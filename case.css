@@ -1,0 +1,32 @@
+.error{
+    color:red;
+}
+#Edit{
+    color: green;
+    font-size: 30px;
+}
+#Delete{
+    color: red;
+   font-size: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url('imeges/xanh.jpg');
+
+    
+}
+.btn{
+    margin: 17px;
+}
+.search-box{
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    transform: translate(-50,-50);
+    background: #2f4038;
+    height: 40px;
+    border-radius: 60px;
+    padding: 7px;
+}

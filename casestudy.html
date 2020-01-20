@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="case.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color: rgb(0, 255, 21); text-align: center;">Thư Viện Truyện Tranh</h1>
+        <div class="search-box">
+            <!-- <input id="search" class="search-txt" type="text" name="" placeholder="Type to search"> -->
+            <a class="search-btn" href="#">
+                <i class="fa fa-search" aria-hidden="true" onclick="manga.search()"></i>
+            </a>
+        </div>
+        <h5> <a href="https://www.facebook.com/profile.php?id=100013805730523" style="color: rgb(255, 0, 55);">Hỗ Trợ
+                Khách Hàng</a></h5>
+        <a href="javascript:void(0);" class="btn btn-primary" onclick="manga.operModal()">Add Manga</a>
+        <div class="row mt-3 table-responsive">
+            <table class="table table-bordered table-hover table-dark" id="myTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Avatar</th>
+                        <th>Author</th>
+                        <th>Publication Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbManga">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div class="modal " id="addEditManga">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Manga</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form id="myForm">
+                        <input hidden name="id" id="id" value="0">
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <label>Name</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-control" type="text" name="Name" id="Name" data-rule-required=true
+                                    data-msg-required="Vui lòng nhập thông tin !">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <label>Avatar</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-control" type="text" name="Avatar" id="Avatar"
+                                    data-rule-required=true data-msg-required="Vui lòng nhập thông tin !">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <label>Author</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-control" type="text" name="Author" id="Author"
+                                    data-rule-required=true data-msg-required="Vui lòng nhập thông tin !">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <label>Publication Date</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-control" type="text" name="PublicationDate" id="PublicationDate"
+                                    data-rule-required=true data-msg-required="Vui lòng nhập thông tin !">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="javascrip:;" class="btn btn-success" onclick="manga.save()">Save</a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="script/case.js"></script>
+
+</html>

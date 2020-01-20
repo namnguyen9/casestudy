@@ -1,0 +1,32 @@
+{
+  "Mangaes": [
+    {
+      "Name": "nam",
+      "Avatar": "imeges/one.png",
+      "Author": " Eiichiro Oda",
+      "PublicationDate": "24/12/1997",
+      "id": 1
+    },
+    {
+      "Name": "Doraemon",
+      "Avatar": "imeges/images1.jpg",
+      "Author": "Fujiko Fujio ",
+      "PublicationDate": "1969",
+      "id": 2
+    },
+    {
+      "Name": "Kimetsu no Yaiba",
+      "Avatar": "imeges/images.jpg",
+      "Author": " Koyoharu Gotōge",
+      "PublicationDate": "15/2/2016",
+      "id": 3
+    },
+    {
+      "Name": "Naruto",
+      "Avatar": "imeges/naruto.jpg",
+      "Author": "Kishimoto Masashi",
+      "PublicationDate": "8/1997",
+      "id": 4
+    }
+  ]
+}
